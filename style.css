@@ -427,3 +427,138 @@ a {
     padding-left: 20px;
   }
 }
+/* ==================================================
+   HOSHIOUGI WORKS - Layout stabilization
+   既存CSSを壊さず最終上書き
+================================================== */
+
+/* ---------- PC : HERO ---------- */
+
+@media (min-width: 961px) {
+
+  .hero {
+    padding: 70px 0 90px;
+    background: #f4f4f2;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+  }
+
+  .hero-copy {
+    max-width: 520px;
+  }
+
+  .hero-logo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .hero-logo {
+    width: min(560px, 100%);
+    max-height: 480px;
+    object-fit: contain;
+  }
+}
+
+
+/* ---------- GAME EMBLEM : 全画面共通 ---------- */
+
+.coming-emblem {
+  width: 100%;
+  height: auto;
+
+  /* 紺PNGをゲーム背景上では白表示 */
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
+
+  opacity: 1;
+}
+
+
+/* ---------- PC : GAME CARD ---------- */
+
+@media (min-width: 961px) {
+
+  .game-card {
+    grid-template-columns: 58% 42%;
+  }
+
+  .game-visual {
+    min-height: 500px;
+  }
+
+  .coming-emblem-wrap {
+    width: 210px;
+    top: 30%;
+  }
+
+  .game-info {
+    padding: 72px 54px 54px;
+  }
+}
+
+
+/* ---------- ABOUT / LINKS ---------- */
+
+.section-light {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.links-section {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.brand-concept {
+  margin-top: 28px;
+}
+
+.site-footer {
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 960px) {
+
+  .hero {
+    padding: 42px 0 58px;
+    background: #f4f4f2;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero-logo {
+    width: min(520px, 100%);
+    margin: 0 auto;
+  }
+
+  .coming-emblem-wrap {
+    width: min(180px, 44vw);
+    top: 28%;
+  }
+
+  .section-light {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .links-section {
+    padding-top: 44px;
+    padding-bottom: 50px;
+  }
+}
