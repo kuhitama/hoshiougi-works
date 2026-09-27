@@ -3,11 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="個人ゲーム開発ブランド 星扇 Works / HOSHIOUGI WORKS。世界観を遊ぶゲームをつくっています。第一作『深夜の退魔バイト』Steam Demo準備中。">
+  <meta property="og:title" content="星扇 Works / HOSHIOUGI WORKS">
+  <meta property="og:description" content="世界観を遊ぶゲーム。第一作『深夜の退魔バイト』Steam Demo準備中。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-main.png">
+  <meta name="theme-color" content="#0f2747">
   <title>星扇 Works / HOSHIOUGI WORKS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>星扇 Works / HOSHIOUGI WORKS</h1>
-  <p>世界観を遊ぶゲーム。</p>
-  <p>公式サイト準備中</p>
+  <header class="site-header">
+    <a class="brand-mini" href="#top" aria-label="星扇 Works ホーム">
+      <span class="brand-mini-mark">✦</span>
+      <span>HOSHIOUGI WORKS</span>
+    </a>
+    <nav class="nav">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <img class="main-logo" src="assets/logo-main.png" alt="星扇 Works / HOSHIOUGI WORKS ロゴ">
+        <p class="eyebrow">INDIE GAME DEVELOPMENT</p>
+        <h1>世界観を遊ぶゲーム。</h1>
+        <p class="hero-copy">
+          真面目な世界の中に、少しおかしな日常を。<br>
+          小さな遊びが、きっとどこかの世界をひらく。
+        </p>
+        <a class="primary-link" href="#games">第一作を見る <span>↓</span></a>
+      </div>
+    </section>
+
+    <section id="games" class="section game-section">
+      <div class="section-heading">
+        <p class="section-kicker">GAMES</p>
+        <h2>深夜の退魔バイト</h2>
+        <p>和風怪異サバイバーアクション</p>
+      </div>
+
+      <article class="game-card">
+        <div class="game-visual">
+          <div class="game-night"></div>
+          <div class="game-emblem-wrap">
+            <img src="assets/emblem.png" alt="" class="game-emblem">
+          </div>
+          <div class="game-visual-copy">
+            <span class="demo-label">STEAM DEMO</span>
+            <strong>COMING SOON</strong>
+          </div>
+        </div>
+
+        <div class="game-copy">
+          <p>
+            深夜の職場に現れる怪異を、限られた勤務時間の中で祓っていく。
+            和風の怪異世界と、少し変わった「夜勤」の日常を組み合わせたアクションゲームです。
+          </p>
+          <div class="tags" aria-label="ゲーム特徴">
+            <span>和風怪異</span>
+            <span>サバイバーアクション</span>
+            <span>3分プレイ</span>
+            <span>Steam Demo準備中</span>
+          </div>
+          <div class="button-row">
+            <span class="button button-disabled" aria-disabled="true">Steam Demo — Coming Soon</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <p class="section-kicker">ABOUT</p>
+        <h2>星扇 Worksについて</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            星扇 Works / HOSHIOUGI WORKS は、個人ゲーム開発ブランドです。
+          </p>
+          <p>
+            世界観を設定として語るだけではなく、UI、言葉、ゲームシステム、
+            キャラクターの反応まで含めて「その世界に本当に存在しているように感じられる体験」を大切にしています。
+          </p>
+        </div>
+
+        <blockquote>
+          <span>Brand Concept</span>
+          <p>真面目な世界の中に、<br>少しおかしな日常を。</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="links" class="section links-section">
+      <div class="section-heading">
+        <p class="section-kicker">LINKS</p>
+        <h2>Follow HOSHIOUGI WORKS</h2>
+      </div>
+
+      <div class="link-cards">
+        <a class="link-card" href="https://x.com/HoshiougiWorks" target="_blank" rel="noopener noreferrer">
+          <span class="link-label">X / Twitter</span>
+          <strong>@HoshiougiWorks</strong>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="link-card" href="https://github.com/kuhitama/hoshiougi-works" target="_blank" rel="noopener noreferrer">
+          <span class="link-label">GitHub</span>
+          <strong>hoshiougi-works</strong>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/emblem.png" alt="" class="footer-emblem">
+    <div>
+      <strong>星扇 Works / HOSHIOUGI WORKS</strong>
+      <p>© 2026 HOSHIOUGI WORKS</p>
+    </div>
+  </footer>
 </body>
 </html>
