@@ -310,3 +310,14 @@
     margin-bottom: 28px;
   }
 }
+/* =========================
+   Emblem color override
+   PC / Mobile 共通
+========================= */
+
+.game-emblem {
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 10px 24px rgba(0, 0, 0, 0.22)) !important;
+}
