@@ -336,6 +336,8 @@ a {
   object-fit: contain;
 
   filter:
+    brightness(0)
+    invert(1)
     drop-shadow(
       0 10px 24px rgba(0, 0, 0, 0.22)
     );
@@ -581,6 +583,10 @@ footer p {
   border-radius: 0;
 
   background: transparent;
+
+  filter:
+    brightness(0)
+    invert(1);
 }
 
 /* =========================
@@ -675,7 +681,8 @@ footer p {
   }
 
   .game-visual-copy strong {
-    font-size: clamp(1.5rem, 9vw, 2.3rem);
+    font-size: clamp(1.7rem, 8vw, 2.1rem);
+    letter-spacing: 0.06em;
   }
 
   footer {
